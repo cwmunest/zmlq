@@ -1,0 +1,106 @@
+<template>
+	<!-- 常见问题 -->
+	<view class="pageHomeWrap">
+		<!-- 导航 -->
+		<uni-nav-bar left-icon="back" title="常见问题" @clickLeft="goBack"></uni-nav-bar>
+		<view class="listBox">
+			<block v-for="(item,index) in list" :key="index">
+				<item-news :title="item.title" :info="item.answer" @onClick="goDetail(item.id)"></item-news>
+			</block>
+		</view>
+		<uni-load-more :loadingType="loadingType" :contentText="contentText"></uni-load-more>
+	</view>
+</template>
+
+<script>
+	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue";
+	import itemNews from './component/itemNews.vue';
+	import uniLoadMore from '@/components/uni-load-more.vue';
+	import executeS from '@/service/executeS.js';
+	import {
+		backTo,linkTo
+	} from '@/utils/utils.js';
+	export default {
+		components: {
+			uniNavBar,
+			itemNews,
+			uniLoadMore
+		},
+		data() {
+			return {
+				goBack: backTo,
+				list: [],
+				page: 1,
+				params: {
+					pageSize: 10,
+					pageNum: 1
+				},
+				pages: 0,
+				loadingType: 0,
+				contentText: {
+					contentdown: "上拉加载更多信息",
+					contentrefresh: "正在加载...",
+					contentnomore: "没有更多数据了"
+				},
+			};
+		},
+		onLoad() {
+			const _this = this;
+			_this.queryAppProblemList(_this)
+		},
+		// 上拉加载更多
+		onReachBottom() {
+			if (this.loadingType !== 0) {
+				return;
+			}
+			this.loadingType = 1;
+			let list = [],
+				params = this.params;
+			params.pageNum++;
+			const paramsPayload = {
+				apixkey: "queryAppProblemList",
+				payload: params
+			}
+			setTimeout(async () => {
+				if (params.pageNum > this.pages) {
+					this.loadingType = 2;
+					return;
+				}
+				const response = await executeS(paramsPayload);
+				if (response.success) {
+					list = response.data.records;
+					this.list = this.list.concat(list);
+					console.log(this.list)
+					this.loadingType = 0;
+				}
+			}, 800);
+		},
+		methods:{
+			queryAppProblemList: (_this) => {
+				const paramsPayload = {
+					apixkey: "queryAppProblemList",
+					payload: _this.params
+				}
+				executeS(paramsPayload).then(response => {
+					if (response.success) {
+						_this.list = response.data.records
+						_this.pages = response.data.pages
+						if(response.data.total <= 10) {
+							_this.loadingType = 2;
+						}
+					}
+				})
+			},
+			goDetail(id) {
+				linkTo('../FAQDetail/FAQDetail?id='+id)
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+	.listBox {
+		background-color: $uni-bg-color;
+		padding: 15rpx 30rpx;
+	}
+</style>

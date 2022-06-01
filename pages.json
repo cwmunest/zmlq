@@ -1,0 +1,416 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/zmlq/index",
+            "style": {
+                "navigationBarTitleText": "醉美琅岐"
+            }
+        },
+        {
+            "path": "pages/qzlq/index",
+            "style": {
+                "navigationBarTitleText": "勤政琅岐"
+            }
+        },
+        {
+            "path": "pages/redlq/index",
+            "style": {
+                "navigationBarTitleText": "红色琅岐"
+            }
+        },
+        {
+            "path": "pages/User/index",
+            "style": {
+                "navigationBarTitleText": "个人中心"
+            }
+        }
+        // ,{
+        //     "path" : "pages/qzlq/component/menuNavBox/menuNavBox",
+        //     "style" : {}
+        // }
+        ,
+        {
+            "path": "pages/pageList/pageList",
+            "style": {}
+        },
+        {
+            "path": "pages/pageDetail/pageDetail",
+            "style": {
+                "navigationBarTitleText": "信息详情"
+            }
+        },
+        {
+            "path": "pages/homesick/homesick",
+            "style": {
+                "navigationBarTitleText": "琅岐乡愁"
+            }
+        },
+        {
+            "path": "pages/travelList/travelList",
+            "style": {
+                "navigationBarTitleText": "琅岐景点"
+            }
+        },
+        {
+            "path": "pages/travelDetail/travelDetail",
+            "style": {
+                "navigationBarTitleText": "琅岐景点"
+            }
+        },
+        {
+            "path": "pages/shadowList/shadowList",
+            "style": {
+                "navigationBarTitleText": "光影效果"
+            }
+        },
+        {
+            "path": "pages/productReserve/productReserve",
+            "style": {
+                "navigationBarTitleText": "特产预定"
+            }
+        },
+        {
+            "path": "pages/productDetail/productDetail",
+            "style": {
+                "navigationBarTitleText": "特产预定"
+            }
+        },
+        {
+            "path": "pages/shadowDetail/shadowDetail",
+            "style": {
+                "navigationBarTitleText": "光影效果"
+            }
+        },
+        {
+            "path": "pages/reserveSuccess/reserveSuccess",
+            "style": {}
+        },
+        {
+            "path": "pages/tabsList/tabsList",
+            "style": {
+                "navigationBarTitleText": "酒店"
+            }
+        },
+        {
+            "path": "pages/hotelDetail/hotelDetail",
+            "style": {
+                "navigationBarTitleText": "酒店"
+            }
+        },
+        {
+            "path": "pages/tastePage/tastePage",
+            "style": {
+                "navigationBarTitleText": "品味琅岐"
+            }
+        },
+        {
+            "path": "pages/foodDetail/foodDetail",
+            "style": {
+                "navigationBarTitleText": "特色美食"
+            }
+        },
+        {
+            "path": "pages/talk/talk",
+            "style": {
+                "navigationBarTitleText": "习总讲话"
+            }
+        },
+        {
+            "path": "pages/redVideoList/redVideoList",
+            "style": {
+                "navigationBarTitleText": "琅岐党员行动"
+            }
+        },
+        {
+            "path": "pages/partyWork/partyWork",
+            "style": {}
+        },
+        {
+            "path": "pages/advise/advise",
+            "style": {
+                "navigationBarTitleText": "投诉建议"
+            }
+        },
+        {
+            "path": "pages/strategy/strategy",
+            "style": {
+                "navigationBarTitleText": "旅游攻略"
+            }
+        },
+        {
+            "path": "pages/travelMap/travelMap",
+            "style": {
+                "navigationBarTitleText": "行程线路"
+            }
+        },
+        {
+            "path": "pages/rimRecommendMap/rimRecommendMap",
+            "style": {
+                "navigationBarTitleText": "周边推荐"
+            }
+        },
+        {
+            "path": "pages/rimRecommendList/rimRecommendList",
+            "style": {
+                "navigationBarTitleText": "周边推荐"
+            }
+        },
+        {
+            "path": "pages/rimRecommendMapMore/rimRecommendMapMore",
+            "style": {
+                "navigationBarTitleText": "周边推荐"
+            }
+        },
+        {
+            "path": "pages/pageImgList/pageImgList",
+            "style": {}
+        },
+        {
+            "path": "pages/service/service",
+            "style": {
+                "navigationBarTitleText": "便民服务"
+            }
+        },
+        {
+            "path": "pages/coupon/coupon",
+            "style": {
+                "navigationBarTitleText": "优惠券"
+            }
+        },
+        {
+            "path": "pages/attract/attract",
+            "style": {
+                "navigationBarTitleText": "招商引资"
+            }
+        },
+        {
+            "path": "pages/information/information",
+            "style": {
+                "navigationBarTitleText": "我要咨询"
+            }
+        },
+        {
+            "path": "pages/couponDetail/couponDetail",
+            "style": {
+                "navigationBarTitleText": "使用优惠券"
+            }
+        },
+        {
+            "path": "pages/reserve/reserve",
+            "style": {
+                "navigationBarTitleText": "特产预定"
+            }
+        },
+        {
+            "path": "pages/consult/consult",
+            "style": {
+                "navigationBarTitleText": "我要咨询"
+            }
+        },
+        {
+            "path": "pages/adviseForm/adviseForm",
+            "style": {
+                "navigationBarTitleText": "投诉建议"
+            }
+        },
+        {
+            "path": "pages/adviseHistoryList/adviseHistoryList",
+            "style": {
+                "navigationBarTitleText": "历史投诉建议"
+            }
+        },
+        {
+            "path": "pages/adviseDetail/adviseDetail",
+            "style": {
+                "navigationBarTitleText": "投诉建议详情"
+            }
+        },
+        {
+            "path": "pages/personalInfo/personalInfo",
+            "style": {
+                "navigationBarTitleText": "个人中心"
+            }
+        },
+        {
+            "path": "pages/changePassword/changePassword",
+            "style": {
+                "navigationBarTitleText": "修改密码"
+            }
+        },
+        {
+            "path": "pages/feedback/feedback",
+            "style": {
+                "navigationBarTitleText": "意见反馈"
+            }
+        },
+        {
+            "path": "pages/FAQ/FAQ",
+            "style": {
+                "navigationBarTitleText": "常见问题"
+            }
+        },
+        {
+            "path": "pages/message/message",
+            "style": {
+                "navigationBarTitleText": "消息中心"
+            }
+        },
+        {
+            "path": "pages/shoppingDetail/shoppingDetail",
+            "style": {
+                "navigationBarTitleText": "购物广场"
+            }
+        },
+        {
+            "path": "pages/hotelTypeList/hotelTypeList",
+            "style": {
+                "navigationBarTitleText": "酒店房型"
+            }
+        },
+        {
+            "path": "pages/hotelTypeDetail/hotelTypeDetail",
+            "style": {
+                "navigationBarTitleText": "房型详情"
+            }
+        },
+        {
+            "path": "pages/FAQDetail/FAQDetail",
+            "style": {
+                "navigationBarTitleText": "常见问题"
+            }
+        },
+        {
+            "path": "pages/messageDetail/messageDetail",
+            "style": {
+                "navigationBarTitleText": "消息中心"
+            }
+        },
+        {
+            "path": "pages/videoPage/videoPage",
+            "style": {}
+        },
+        {
+            "path": "pages/activityList/activityList",
+            "style": {
+                "navigationBarTitleText": "活动预告"
+            }
+        },
+        {
+            "path": "pages/activityDetail/activityDetail",
+            "style": {
+                "navigationBarTitleText": "活动预告"
+            }
+        },
+        {
+            "path": "pages/hongguanghu/home/home",
+            "style": {
+                "navigationBarTitleText": "红光湖互动"
+            }
+        },
+        {
+            "path": "pages/hongguanghu/orderRecords/orderRecords",
+            "style": {
+                "navigationBarTitleText": "订单记录"
+            }
+        },
+        {
+            "path": "pages/hongguanghu/orderDetail/orderDetail",
+            "style": {
+                "navigationBarTitleText": "提交订单"
+            }
+        },
+        {
+            "path": "pages/hongguanghu/addAnimate/addAnimate",
+            "style": {
+                "navigationBarTitleText": "上传视频"
+            }
+        },
+        {
+            "path": "pages/takephotoatwill/takephotoatwill",
+            "style": {
+                "navigationBarTitleText": "随手拍"
+            }
+        },
+        {
+            "path": "pages/publicevaluation/publicevaluation",
+            "style": {
+                "navigationBarTitleText": "公众评价"
+            }
+        },
+        {
+            "path": "pages/orderAddress/orderAddress",
+            "style": {
+                "navigationBarTitleText": "收货地址"
+            }
+        },
+        {
+            "path": "pages/orderAddress/addressEdit",
+            "style": {
+                "navigationBarTitleText": "地址编辑"
+            }
+        },
+        {
+            "path": "pages/publicevaluation/myevaluationadmin",
+            "style": {
+                "navigationBarTitleText": "我的评价"
+            }
+        },
+        {
+            "path": "pages/takephotoatwill/mytakephotoatwilladmin",
+            "style": {
+                "navigationBarTitleText": "我的随手拍"
+            }
+        },
+        {
+            "path": "pages/myorder/myorder",
+            "style": {
+                "navigationBarTitleText": "我的订单"
+            }
+        },
+        {
+            "path": "pages/myexpense/myexpense",
+            "style": {
+                "navigationBarTitleText": "我的收支"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#0289e3",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#bcbcbc ",
+        "selectedColor": "#0289e3",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/zmlq/index",
+                "iconPath": "./static/images/tabBar/tabBarIcon01.png",
+                "selectedIconPath": "./static/images/tabBar/tabBarIcon01_on.png",
+                "text": "醉美琅岐"
+            },
+            {
+                "pagePath": "pages/qzlq/index",
+                "iconPath": "./static/images/tabBar/tabBarIcon02.png",
+                "selectedIconPath": "./static/images/tabBar/tabBarIcon02_on.png",
+                "text": "勤政琅岐"
+            },
+            {
+                "pagePath": "pages/redlq/index",
+                "iconPath": "static/images/tabBar/tabBarIcon03.png",
+                "selectedIconPath": "static/images/tabBar/tabBarIcon03_on.png",
+                "text": "红色琅岐"
+            },
+            {
+                "pagePath": "pages/User/index",
+                "iconPath": "static/images/tabBar/tabBarIcon04.png",
+                "selectedIconPath": "static/images/tabBar/tabBarIcon04_on.png",
+                "text": "个人中心"
+            }
+        ]
+    }
+}
